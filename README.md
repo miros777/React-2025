@@ -71,3 +71,8 @@ export default defineConfig([
   },
 ])
 ```
+
+```
+додав ще В vite.config.ts
+import react from '@vitejs/plugin-react'
+```

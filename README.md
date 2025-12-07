@@ -76,3 +76,12 @@ export default defineConfig([
 додав ще В vite.config.ts
 import react from '@vitejs/plugin-react'
 ```
+```
+#Fs05Kiho
+
+з arrays.js взяти масив coursesAndDurationArray.
+
+Вивести кожен його елемент, створивши необхідні моделі та компоненти
+
+Стилізація довільна, але обов’язково підключена і мінімально зроблена (хоча б один стиль, який працює).
+```

@@ -1,6 +1,6 @@
-import type {ICoursesTitle} from "../models/ICoursesTitle";
+import type {CoursesTitle} from "../models/CoursesTitle.ts";
 
-export const coursesTitleArray:ICoursesTitle = {
+export const coursesTitleArray:CoursesTitle = {
     all_titles: [
         'JavaScript Complex',
         'Java Complex',

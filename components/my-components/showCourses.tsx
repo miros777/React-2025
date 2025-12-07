@@ -1,15 +1,16 @@
-import type { FC } from 'react';
-import type {ICoursesTitle} from "../../models/ICoursesTitle.ts";
+import type {FC} from 'react';
+import type {CoursesTitle} from "../../models/CoursesTitle.ts";
 
 type MyCoursesTitle = {
-    titles: ICoursesTitle
+    titles: CoursesTitle
 }
 
 const ShowCourses: FC<MyCoursesTitle> = ({titles}) => {
-    // console.log(titles.all_titles)
     return (
         <div>
-            {titles.all_titles.map((va,index)=> <p key={index}>{va}</p>)}
+            <ul className="text-red-600 bg-amber-100 text-center">
+                {titles.all_titles.map((va, index) => <li key={index}>{va}</li>)}
+            </ul>
         </div>
     );
 };

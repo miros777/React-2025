@@ -71,3 +71,12 @@ export default defineConfig([
   },
 ])
 ```
+```
+changed  vite.config.ts
+add
+react(),
+```
+
+```
+add component ShowCourses
+```

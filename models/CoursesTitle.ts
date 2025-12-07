@@ -1,4 +1,4 @@
-export type ICoursesTitle =
+export type CoursesTitle =
     {
         all_titles: string[]
     }

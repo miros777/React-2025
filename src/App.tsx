@@ -1,11 +1,13 @@
 import './App.css'
-import TodoComponents from "../components/todos-component/TodoComponents.tsx";
+import CommentsComponent from "../components/comments-component/CommentsComponent.tsx";
+// import TodoComponents from "../components/todos-component/TodoComponents.tsx";
 
 function App() {
 
   return (
       <>
-          <TodoComponents />
+          {/*<TodoComponents />*/}
+          <CommentsComponent />
       </>
   )
 }

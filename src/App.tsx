@@ -1,11 +1,11 @@
 import './App.css'
-import TodoComponents from "../components/todos-component/TodoComponents.tsx";
+import PostsComponent from "../components/posts-component/PostsComponent.tsx";
 
 function App() {
 
   return (
       <>
-          <TodoComponents />
+          <PostsComponent />
       </>
   )
 }

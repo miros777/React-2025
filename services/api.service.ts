@@ -1,7 +1,8 @@
-import type ITodo from "../models/TodoModel.ts";
-const endPointTodos = import.meta.env.VITE_API_URL + '/todos';
+import type IPostModel from "../models/PostModel.ts";
 
-export const getTodos = async (): Promise<ITodo[]> => {
-    return await fetch(endPointTodos)
-        .then(res => res.json())
-};
+const postsUrl = import.meta.env.VITE_API_URL + '/posts';
+
+export const getPosts =  async ():Promise<IPostModel[]> => {
+    return  await fetch(postsUrl)
+        .then(value => value.json())
+}

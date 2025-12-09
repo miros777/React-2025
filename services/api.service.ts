@@ -1,7 +1,7 @@
-import type IUser from "../models/UserModel";
-const baseUrl = import.meta.env.VITE_API_URL;
+import type ITodo from "../models/TodoModel.ts";
+const endPointTodos = import.meta.env.VITE_API_URL + '/todos';
 
-export const getUsers = async (): Promise<IUser[]> => {
-    return await fetch(baseUrl)
+export const getTodos = async (): Promise<ITodo[]> => {
+    return await fetch(endPointTodos)
         .then(res => res.json())
 };

@@ -10,7 +10,6 @@ const PostComponent:FC<PropsPost> = ({post}) => {
         <div className="bg-indigo-300 border-b-blue-400 p-3 mb-2 text-center font-bold">
             <div>{post.title}</div>
             <div>{post.body}</div>
-            <div>{post.userId}</div>
         </div>
     );
 };

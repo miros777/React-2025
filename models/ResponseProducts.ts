@@ -1,6 +1,6 @@
 import type IProduct from "./IProduct";
 
-export interface ResponseProduct{
+export interface ResponseProducts {
     products: IProduct[];
     "total": 194,
     "skip": 0,

@@ -1,7 +1,7 @@
 import './App.css'
 // import CommentsComponent from "../components/comments-component/CommentsComponent.tsx";
-// import ProductsComponent from "../components/products-component/ProductsComponent.tsx";
-import TodosComponent from "../components/todos-component/TodosComponent.tsx";
+import ProductsComponent from "../components/products-component/ProductsComponent.tsx";
+// import TodosComponent from "../components/todos-component/TodosComponent.tsx";
 
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
   return (
       <>
           {/*<CommentsComponent />*/}
-          {/*<ProductsComponent />*/}
-          <TodosComponent />
+          <ProductsComponent />
+          {/*<TodosComponent />*/}
       </>
   )
 }

@@ -1,19 +1,27 @@
 import {useEffect, useState} from "react";
-import type IComments from "../../models/IComments.ts";
 import {getComments} from "../../services/api.service.ts";
 import CommentComponent from "../CommentComponent/CommentComponent.tsx";
+import type {IComment} from "../../models/IComment.ts";
 
 const CommentsComponent = () => {
 
-    const [comments, setComments] = useState<IComments[]>([]);
+    const [comments, setComments] = useState<IComment[]>([]);
 
     useEffect(() => {
-        getComments().then(comments => setComments(comments));
+        getComments().then(comments => {
+            setComments(comments ?? []); // якщо data.comments undefined, ставимо пустий масив
+        }).catch(err => {
+            console.error(err);
+            setComments([]); // на випадок помилки
+        });
     }, []);
+
 
     return (
         <div className="flex flex-wrap">
-            {comments.map((comment) => <CommentComponent key={comment.id} comment={comment} /> )}
+            {
+                comments.map(comment => <CommentComponent key={comment.id} comment={comment} />)
+            }
         </div>
     );
 };

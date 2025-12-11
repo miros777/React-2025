@@ -1,15 +1,17 @@
 import type {FC} from "react";
-import type IComments from "../../models/IComments.ts";
+import type {IComment} from "../../models/IComment.ts";
 
 type PropsComments = {
-    comment: IComments;
+    comment: IComment;
 }
-const CommentComponent:FC<PropsComments> = ({comment: {name, email, body}}) => {
+const CommentComponent:FC<PropsComments> = ({comment: {body, likes, user}}) => {
     return (
         <div className="bg-indigo-300 text-black p-6 m-2 w-80">
-            <div className="font-bold">{name}</div>
-            <div className="italic text-red-600">{email}</div>
-            <div>{body}</div>
+            <div className="font-bold">{body}</div>
+            <div className="italic text-red-600">{likes}</div>
+            <div className="flex fl">
+                <div>{user.fullName}</div>
+                <div>{user.username}</div></div>
         </div>
     );
 };

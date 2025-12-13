@@ -7,13 +7,10 @@ const PostsPage = () => {
             PostsPage
             <ul>
                 <li>
-                    <Link to={'1'}>1</Link>
+                    <Link to={'jsonplaceholder'}>jsonplaceholder</Link>
                 </li>
                 <li>
-                    <Link to={'2'}>2</Link>
-                </li>
-                <li>
-                    <Link to={'3'}>3</Link>
+                    <Link to={'dummyjson'}>dummyjson</Link>
                 </li>
             </ul>
 

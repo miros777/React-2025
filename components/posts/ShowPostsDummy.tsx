@@ -8,7 +8,7 @@ const ShowPostsDummy = () => {
 
     useEffect(() => {
         postServicesDummy.getPosts()
-            .then(posts => setPosts(posts));
+            .then(({posts} ) => setPosts(posts));
     }, [])
 
     return (

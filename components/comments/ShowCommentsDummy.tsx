@@ -8,7 +8,7 @@ const ShowCommentsDummy = () => {
     const [comments, setComments] = useState<ICommentDummy[]>([]);
     useEffect(() => {
         commentServicesDummy.getComments()
-            .then(comments => setComments(comments));
+            .then(({comments}) => setComments(comments));
     },[])
 
     return (

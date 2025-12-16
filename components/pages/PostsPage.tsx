@@ -4,7 +4,7 @@ const PostsPage = () => {
 
     return (
         <div>
-            PostsPage
+            <h1 className="text-center">PostsPage</h1>
             <Outlet/>
         </div>
     );

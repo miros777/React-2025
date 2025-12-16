@@ -8,10 +8,11 @@ const ShowUsersDummy = () => {
     const [users, setUsers] = useState<IUserDummy[]>([]);
 
     useEffect(() => {
-        userServicesDummy.getUsers().then(users=> {
+        userServicesDummy.getUsers().then(({users})=> {
             setUsers(users)
         })
     }, [])
+
     return (
         <div className="flex flex-wrap justify-between">
             {users.map((user:IUserDummy) => <ShowUserDummy key={user.id} user={user} />)}

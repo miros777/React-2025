@@ -21,8 +21,9 @@ const userServicesPlaceholder =  {
 
 const postServicesDummy =  {
     getPosts: async ()=> {
-        return  await fetch(baseUrlDummy + '/' + 'posts')
-            .then(res => res.json())
+        const res = await fetch(baseUrlDummy + '/' + 'posts')
+            .then(res => res.json());
+        return res.posts;
     }
 }
 
@@ -35,15 +36,16 @@ const postServicesPlaceholder =  {
 
 const commentServicesDummy =  {
     getComments: async ()=> {
-        return  await fetch(baseUrlDummy + '/' + 'comments')
-            .then(res => res.json())
+        const res = await fetch(baseUrlDummy + '/' + 'comments')
+            .then(res => res.json());
+        return res.comments;
     }
 }
 
 const commentServicesPlaceholder =  {
     getComments: async ()=> {
         return  await fetch(baseUrlPlaceholder + '/' + 'comments')
-            .then(res => res.json())
+            .then(res => res.json());
     }
 }
 

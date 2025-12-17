@@ -6,6 +6,7 @@ import type {IUserDummyBaseModel} from "../models/dummy/user/IUserDummyBase.ts";
 import type ICommentDummy from "../models/dummy/comment/ICommentDummy.tsx";
 import type {ICommentDummyBase} from "../models/dummy/comment/ICommentDummyBase.ts";
 import type ICommentJsonPlaceholder from "../models/jsonplaceholder/comment/ICommentJsonPlaceholder.ts";
+import type {ICartDummyBase} from "../models/dummy/cart/ICartDummyBase.ts";
 
 const baseUrlPlaceholder = 'https://jsonplaceholder.typicode.com';
 const baseUrlDummy = 'https://dummyjson.com';
@@ -13,6 +14,13 @@ const baseUrlDummy = 'https://dummyjson.com';
 const userServicesDummy = {
     getUsers: async (): Promise<IUserDummyBaseModel & { users: IUserDummy[] }> => {
         return await fetch(baseUrlDummy + '/' + 'users')
+            .then(res => res.json());
+    }
+}
+
+const cartServicesDummy = {
+    getCarts: async (id:string): Promise<ICartDummyBase> => {
+        return await fetch(baseUrlDummy + '/users/' + id + '/carts' )
             .then(res => res.json());
     }
 }
@@ -58,5 +66,6 @@ export {
     postServicesDummy,
     postServicesPlaceholder,
     commentServicesDummy,
-    commentServicesPlaceholder
+    commentServicesPlaceholder,
+    cartServicesDummy
 }

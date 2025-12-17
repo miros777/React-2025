@@ -10,12 +10,15 @@ import ShowPostsDummy from "../components/posts/ShowPostsDummy.tsx";
 import ShowPostsJsonPlaceholder from "../components/posts/ShowPostsJsonPlaceholder.tsx";
 import ShowCommentsJsonPlaceholder from "../components/comments/ShowCommentsJsonPlaceholder.tsx";
 import ShowCommentsDummy from "../components/comments/ShowCommentsDummy.tsx";
+import CartsPage from "../components/pages/CartsPage.tsx";
 
 export const routs = createBrowserRouter([
 
         {
             path: '/', element: <MainLayout/>, children: [
                 {index: true, element: <HomePage/>},
+                {path:'carts/user/:id', element: <CartsPage/>},
+
                 {path: 'users', element: <UsersPage/> , children:[
                         { path:'jsonplaceholder', element: <ShowUsersJsonPlaceholder/>},
                         { path:'dummyjson', element: <ShowUsersDummy/>}

@@ -78,11 +78,7 @@ import react from '@vitejs/plugin-react'
 ```
 
 ```
-Побудувати меню, з можливістю переходу на наступні маршрути:
-/users/jsonplaceholder – відобразити всі об’єкти з  https://jsonplaceholder.typicode.com/users
-/users/dummyjson – відобразити всі об’єкти з https://dummyjson.com/users
-/posts/jsonplaceholder- відобразити всі об’єкти з  https://jsonplaceholder.typicode.com/posts
-/posts/dummyjson – відобразити всі об’єкти з https://dummyjson.com/posts
-/comments/jsonplaceholder – відобразити всі об’єкти з https://jsonplaceholder.typicode.com/comments
-/comments/dummyjson – відобразити всі об’єкти з https://dummyjson.com/comments
+#knZgVIwvqd
+На головній сторінці вивести всіх користувачів з будь-якого апі.
+При кліку на певного користувача вивести його корзини товарів, заміняючи(!!!!!) батьківський компонент списком з корзинами.
 ```

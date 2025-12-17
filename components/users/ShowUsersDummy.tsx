@@ -11,7 +11,8 @@ const ShowUsersDummy = () => {
         userServicesDummy.getUsers().then(({users})=> {
             setUsers(users)
         })
-    }, [])
+    }, []);
+
 
     return (
         <div className="flex flex-wrap justify-between">

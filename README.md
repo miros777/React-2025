@@ -76,3 +76,8 @@ export default defineConfig([
 додав ще В vite.config.ts
 import react from '@vitejs/plugin-react'
 ```
+```
+Є наступні сторінки:
+UsersPage – відтворює користувачів з api dummyjson.com (довільна розмітка та кількість інфи про об’єкт).
+Додати кнопки “вперед” “назад” для пагінації об’єктів.
+```

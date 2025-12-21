@@ -14,6 +14,11 @@ export const carsServices = {
         const cars = response.data;
 
         return cars
+    },
+
+    addCar: async (car: ICar) => {
+         await instance.post<ICar>('/cars', car);
     }
 }
+
 

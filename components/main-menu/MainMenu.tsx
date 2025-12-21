@@ -7,8 +7,9 @@ const MainMenu = () => {
             <ul className="flex justify-center bg-indigo-300 p-3">
                 <li><Link to={"/"}>Home page</Link></li>
                 <li><Link to={"/cars"}>Cars</Link></li>
-                <li>Reserve</li>
+                <li><Link to={"/addcar"}>Add car</Link></li>
             </ul>
+
         </div>
     );
 };

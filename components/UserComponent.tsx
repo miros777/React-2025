@@ -1,5 +1,5 @@
 import type {IUser} from "../models/IUser";
-import {type FC, memo} from "react";
+import {type FC, memo, useEffect} from "react";
 
 type PropsUser = {
     foo: (user:IUser) => void,
@@ -11,7 +11,9 @@ type PropsUser = {
 const UserComponent:FC<PropsUser> = memo(({user, foo, testFunc, arrNum}:PropsUser) => {
 
     //test (how works useMemo and useCallBack)
+    useEffect(() => {
         testFunc();
+    }, [testFunc]);
         console.log(arrNum)
 
     return (

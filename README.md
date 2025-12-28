@@ -76,3 +76,8 @@ export default defineConfig([
 додав ще В vite.config.ts
 import react from '@vitejs/plugin-react'
 ```
+```
+#GP0nA6rxivp
+Зробити дерево компонентів, у дві сторони. Чим глибше, тим краще для вас.
+Зробити контекст. Зробити кнопку, яка буде міняти “тему” зі світлої на темну.
+```

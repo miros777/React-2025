@@ -1,6 +1,6 @@
 import {createAsyncThunk, createSlice, isRejected, type PayloadAction} from "@reduxjs/toolkit";
-import type IPost from "../../models/IPost.ts";
-import {getData} from "../../services/api.services.js.ts";
+import type IPost from "../../models/IPost";
+import {getData} from "../../services/api.services";
 
 type PostSliceType = {
     posts: IPost[]

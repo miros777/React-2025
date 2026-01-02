@@ -4,6 +4,7 @@ const HomePage = () => {
             <hr/>
             Home page
             <hr/>
+
         </div>
     );
 };

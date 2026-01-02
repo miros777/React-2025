@@ -1,6 +1,6 @@
 import {useAppDispatch} from "../../redux/hooks/useAppDispatch.tsx";
 import {useAppSelector} from "../../redux/hooks/useAppSelector.tsx";
-import {postSliceActions} from "../../redux/slices/postSlice.tsx";
+import {postSliceActions} from "../../redux/slices/postSlice.ts";
 import {useEffect} from "react";
 import PostComponent from "./PostComponent.tsx";
 

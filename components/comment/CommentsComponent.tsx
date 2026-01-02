@@ -2,7 +2,7 @@ import {useAppDispatch} from "../../redux/hooks/useAppDispatch.tsx";
 import {useEffect} from "react";
 import {useAppSelector} from "../../redux/hooks/useAppSelector.tsx";
 import CommentComponent from "./CommentComponent.tsx";
-import {commentsSliceActions} from "../../redux/slices/commentSlice.tsx";
+import {commentsSliceActions} from "../../redux/slices/commentSlice.ts";
 
 const CommentsComponent = () => {
     const {comments} = useAppSelector(({commentSlice}) => commentSlice);

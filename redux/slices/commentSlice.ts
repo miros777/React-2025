@@ -1,6 +1,6 @@
 import {createAsyncThunk, createSlice, isRejected, type PayloadAction} from "@reduxjs/toolkit";
 import type IComment from "../../models/IComment.ts";
-import {getData} from "../../services/api.services.js.ts";
+import {getData} from "../../services/api.services.ts";
 
 type CommetSliceType = {
     comments:IComment[]

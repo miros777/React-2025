@@ -1,7 +1,8 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {commentSlice} from "./slices/commentSlice.tsx";
-import {postSlice} from "./slices/postSlice.tsx";
-import {userSlice} from "./slices/userSlice.tsx";
+import {commentSlice} from "./slices/commentSlice.ts";
+import {postSlice} from "./slices/postSlice.ts";
+import {userSlice} from "./slices/userSlice.ts";
+
 
 export const store = configureStore({
 
@@ -11,4 +12,4 @@ export const store = configureStore({
         userSlice: userSlice.reducer
     },
 
-})
+});

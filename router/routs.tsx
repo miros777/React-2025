@@ -13,5 +13,6 @@ export const routs = createBrowserRouter([{
         {path: "posts", element: <PostsPage/>},
         {path: "users", element: <UsersPage/>},
         {path: "comments", element: <CommentsPage/>},
+        {path: "complex", element: <ComplexPage/>},
     ]
 }])
